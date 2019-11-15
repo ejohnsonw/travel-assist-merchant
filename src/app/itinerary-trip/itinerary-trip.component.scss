@@ -1,0 +1,133 @@
+.flightSearchTime , .depTime {
+  float: left;
+  min-width: 50px;
+  margin-left: 10px;
+}
+
+.originCode , .destinationCode {
+  float: left;
+  min-width: 40px;
+}
+
+.flightNumber {
+  float: left;
+  margin-left: 10px;
+  width: 45px;
+}
+
+.headerbook {
+  font-weight: 600;
+  color: #fcc71f;
+}
+.flightSearchPrice{
+  float: right;
+  min-width: 80px;
+}
+
+.flightSearchElapsed{
+  margin-left: 20px;
+}
+
+.departureCodes {
+  float: left;
+  min-width: 70px;
+}
+
+figure {
+  font-family: 'Inconsolata', monospace;
+  font-size: 13px;
+}
+
+.price-d {
+  margin-right: 0px;
+  color: #FF6146;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.price-f, .price-d {
+  margin-left: 10px;
+}
+
+.duration {
+  margin-left: 5px;
+}
+
+.paxTable {
+
+  margin-top: 15px;
+}
+
+.paxTable th{
+  background-color: #FF6146;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.error {
+  color: red;
+}
+
+.passengerLegend , .paymentLegend{
+  font-size: 1.5em;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 0.25px;
+  margin-bottom: 20px;
+  color: #3D5291;
+}
+
+.offerHeader {
+  background-color: #FF6146;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.flightSearchTime , .depTime {
+  float: left;
+  min-width: 50px;
+  margin-left: 10px;
+}
+
+.segmentsAndServices {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.flightNumber {
+  float: left;
+  width: 75px;
+}
+.segments {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9em;
+}
+
+.segmentsAndServicesSmall {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 5px;
+  min-width:60%;
+}
+.airlineName {
+  margin-top: -7px;
+  font-family: Roboto;
+  font-size: 2em;
+}
+.airlineNameSmall {
+  margin-top: -7px;
+  font-family: Roboto;
+}
+
+.tripPanel {
+  font-family: 'Inconsolata', monospace;
+  font-size: 12px;
+  /*background: white;*/
+  /*padding: 20px;*/
+  /*border: 0.25px solid #FF6146;*/
+  /*border-radius: 10px;*/
+  /*min-width: 600px;*/
+  margin-left: auto;
+  margin-right: auto;
+  color: #3D5291;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+<div class="card card-stats" style="min-height: 200px; min-width: 400px">
+  <div class="card-body tripPanel">
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div>
+          <!--<img src="https://airlinelogos.aero/500px/{{trip.segments[0].airlineMarketing}}.png" height="50">-->
+          <img src="https://quos.s3.amazonaws.com/advertising/bento/airmaginary.png" height="50">
+          <button class="btn btn-md btn-outline-danger btn-round btn-icon" (click)="shop()" style="margin-left: 50px"><i
+            class="nc-icon nc-minimal-right"></i></button>
+        </div>
+        <!--<figcaption ng-class="{ 'ibtrip': $index==1, 'obtrip':$index==0}">-->
+        <!--{{itinerary.SequenceNumber}} {{itinerary.typePricing.name}}-->
+        <div class="clear" ng-init="fs=trip.segments[0]; ls=trip.segments[trip.segments.length-1]"></div>
+        <div class="price-night">
+          <span class="originDestination">{{trip.starts}}</span>
+          <!--<div class="clear"></div><div class="clear"></div>-->
+          <!--<span>{{fs.dept}}</span>-->
+          <!--<span>{{ls.arrt}}</span>-->
+          <span class="price-f"><i class="fa fa-clock-o"></i>{{trip.duration}}</span>
+
+          <span class="price-f" *ngIf="trip.segments.length-1 >= 1">{{trip.stops}} Stops</span>
+          <span class="price-f" *ngIf="trip.segments.length-1 == 0">direct</span>
+          <span class="price-d" *ngIf="idx === 0">${{formatPrice(itinerary.price,2, 3, ',', '.')}}</span>
+        </div>
+
+        <div class="flightSegmentBfm"
+             *ngFor="let segment of trip.segments">
+
+          <div *ngIf="segment.airlineMarketing" class="row">
+            <!--{{segment}}-->
+
+            <span>{{segment.dep}}</span>
+            <span class="originCode">{{segment.origin}}{{segment.destination}}</span>
+            <span class="flightNumber">{{segment.flight}}{{segment.classOfService}}</span>
+            <!--<span class="destinationCode"></span>-->
+            <span class="depTime">{{segment.depd}} {{segment.dept}}</span>
+            <span class="depTime">{{segment.arrd}} {{segment.arrt}}</span>
+
+            <span class="duration">{{segment.elapsed}}</span>
+
+            <!--<span class="ontime" *ngIf="segment.flightRating.ratings">OnTime %: {{(segment.flightRating.ratings[0].ontimePercent * 100).format(2,",")}}</span>-->
+            <!--<span class="ontime" *ngIf="!segment.flightRating.ratings[0].ontimePercent">OnTime %: -</span>-->
+          </div>
+
+        </div>
+      </div>
+      <!--<div class="col-1 col-md-1" style="margin-top: 50px">-->
+        <!--<button class="btn btn-md btn-outline-danger btn-round btn-icon" (click)="shop()"><i-->
+        <!--class="nc-icon nc-minimal-right"></i></button>-->
+      <!--</div>-->
+
+
+    </div>
+  </div>
+
+</div>
