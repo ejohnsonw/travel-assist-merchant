@@ -18,9 +18,9 @@ export class BackendService {
   prepareHeaders() {
     let head = undefined
     if (typeof  this.token !== 'undefined') {
-      head = {'headers': {'Access-Control-Request-Method': 'OPTIONS,POST,GET,DELETE,PUT', 'user-key': '6197a0c3c4a105a5e35d04c22c80ddce'}};
+      head = {'headers': {'Access-Control-Request-Method': 'OPTIONS,POST,GET,DELETE,PUT', 'user-key': '**********'}};
     } else {
-      head = {'headers': {'content-type': 'application/json', 'user-key': '6197a0c3c4a105a5e35d04c22c80ddce'}}
+      head = {'headers': {'content-type': 'application/json', 'user-key': '*********'}}
     }
     console.log(head)
 
